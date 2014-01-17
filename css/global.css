@@ -1,0 +1,595 @@
+/*Global-------------------------------------------------------*/
+
+/* custom fonts -------------------------------------------------------*/
+
+@font-face {
+    font-family: 'champagne__limousinesregular';
+    src: url('../fonts/champagne__limousines-webfont.eot');
+    src: url('../fonts/champagne__limousines-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/champagne__limousines-webfont.woff') format('woff'),
+         url('../fonts/champagne__limousines-webfont.ttf') format('truetype'),
+         url('../fonts/champagne__limousines-webfont.svg#champagne__limousinesregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JosefinSlabRegular';
+    src: url('../fonts/JosefinSlab-Regular-webfont.eot');
+    src: url('../fonts/JosefinSlab-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/JosefinSlab-Regular-webfont.woff') format('woff'),
+         url('../fonts/JosefinSlab-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/JosefinSlab-Regular-webfont.svg#JosefinSlabRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lemonchickenregular';
+    src: url('../fonts/LEMONCHI-webfont.eot');
+    src: url('../fonts/LEMONCHI-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/LEMONCHI-webfont.woff') format('woff'),
+         url('../fonts/LEMONCHI-webfont.ttf') format('truetype'),
+         url('../fonts/LEMONCHI-webfont.svg#lemonchickenregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+* { 
+ 	-moz-box-sizing: border-box; 
+ 	-webkit-box-sizing: border-box; 
+ 	box-sizing: border-box; 
+}
+
+body {
+	/* remove default spaces */
+	padding: 0;
+	margin: 0;
+   	font-family: 'proxima_novalight', helvetica, sans-serif;
+   	color: #fff;
+	background-color: #000;
+	font-size: 62.5%;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	outline: none; /* removes dotted border from Firefox */
+	color: #C5D6D2;
+	font-family: 'champagne__limousinesregular', Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+a:hover {
+	color: #a6de88;
+}
+#active a{
+	color: #a6de88;
+}
+#wrapper {
+	max-width: 1280px;
+	margin:0 auto;
+}
+
+/* textbox styles -------------------------------------------------------*/
+.roundbox {
+	-moz-border-radius: 35px;
+	border-radius: 35px;
+	background: rgba(23,23,23,0.7);	
+	text-align: left;
+	padding: 15px;
+}
+p {
+	font-size: 2em;
+	text-shadow:1px 1px 0 rgb(0,0,0);
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	font-style: italic;
+}
+h2 {
+	margin: 0px;
+	font-family:'lemonchickenregular', Arial, sans-serif;
+	text-align: center;
+	font-size: 3em;
+/*	font-weight: lighter;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;*/
+}
+
+
+
+/* Header -------------------------------------------------------*/
+
+header {
+	height: 65px;
+	background: rgba(23,23,23,0.7);		
+	margin: 90px 0 33px 0;
+	position: relative;
+}
+header h1 {
+	position: absolute;
+	margin: -50px 0 0 42%;
+}
+nav li{
+	display: inline-block;
+	font-size: 3em;
+	font-family: 'proxima_novalight';
+	padding-right:8.879%;/*88px*/
+}
+nav {
+	margin-left: 19%;
+	padding-top:15px;
+}
+.gap {
+	margin-right: 21%;
+}
+
+
+
+/* logo animations -------------------------------------------------------*/
+header img { 
+ 	-webkit-transition: all 0.5s ease-out; 
+ 	-moz-transition: all 0.5s ease; 
+ 	-o-transition: all 0.5s ease; 
+ } 
+header img:hover {
+	-webkit-transform: rotate(-5deg); 
+	-moz-transform: rotate(-5deg); 
+	-o-transform: rotate(-5deg); 
+}
+
+
+/* index content-------------------------------------------------------*/
+
+.mantra {
+	min-height: 177px;
+	width:45.41%;
+	margin: 95px 0 352px 45%;
+}
+.homepage {
+	background-image: url(../images/cooking.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;	
+	background-position: top right;
+}
+.learn {
+	font-size: 2em;
+	text-align: right;
+	margin:0 40px;
+	font-style: normal;
+}
+
+/* food content-------------------------------------------------------*/
+
+.food {
+	margin: 80px 18% 15px;
+	width:63%;
+}
+.foodpage {
+	background-image: url(../images/garlic.jpg);
+	background-repeat: no-repeat;
+	background-size: 120%;
+	background-position: top left;
+}
+
+
+/* about content-------------------------------------------------------*/
+
+.aboutpage {
+	background-image: url(../images/cajun.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top left;
+}
+.aboutus {
+	float:right;
+	min-height: 460px;
+	width:28.907%;
+	margin: 33px 3% 408px 0px;
+}
+
+/* services content-------------------------------------------------------*/
+.services {
+	float:right;
+	width:66%;
+	margin: 53px 31% 208px 0px;
+}
+.servicespage {
+	background-image: url(../images/ribs.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top left;
+}
+.services .type {
+	font-size: 2.2em;
+}
+
+/* contact content-------------------------------------------------------*/
+.contact {
+	float:right;
+	min-width:53%;
+	margin: 73px 23% 208px 0px;
+	text-align: center;
+}
+.contact p {
+	margin:0;
+	padding: 0;
+}
+.contactpage {
+	background-image: url(../images/rice.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.type {
+	margin: 0px;
+	font-family: 'JosefinSlabRegular';	text-align: center;
+	font-size: 2em;
+	font-style: normal;
+	padding:10px;
+/*	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;*/
+}
+.callme {
+	font-family: 'JosefinSlabRegular';	text-align: center;
+	font-size: 4.7em;
+}
+
+
+/* Footer, global styles-------------------------------------------------------*/
+
+footer {
+	clear:both;
+	height: 65px;
+	background: rgba(23,23,23,0.7);
+	font-size: 1.6em;
+	margin-bottom: 50px;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+footer li {
+	padding: 7px 0 5px 0;
+}
+.call {
+	float: left;
+	margin-left:40px; 
+}
+.copyright {
+	float:right;
+	margin-right:40px; 
+}
+footer a {
+	font-size: 1.3em;
+}
+
+
+
+/*General jquery/hover/popup Styles*/
+
+.mosaic-block {
+	float:left;
+	position:relative;
+	overflow:hidden;
+	width:410px;
+	min-height:275px;
+	margin:7px;
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.7);	
+}
+
+.foodone{
+	background:url(../images/peppers.jpg) no-repeat center;
+	background-size: 100%;
+}	
+.foodtwo{
+	background:url(../images/sandwich.jpg) no-repeat center;
+	background-size: 100%;
+}
+.foodthree{
+	background:url(../images/zza.jpg) no-repeat center;
+	background-size: 100%;
+}
+.foodfour{
+	background:url(../images/scallops.jpg) no-repeat center;
+	background-size: 100%;
+}
+.foodfive{
+	background:url(../images/lamb_asparagus.jpg) no-repeat center;
+	background-size: 100%;
+}
+.foodsix{
+	background:url(../images/bruschetta.jpg) no-repeat center;
+	background-size: 100%;
+}
+.foodseven{
+	background:url(../images/taco.jpg) no-repeat center;
+	background-size: 100%;
+}
+.foodeight{
+	background:url(../images/chilli.jpg) no-repeat center;
+	background-size: 100%;
+}
+.foodnine{
+	background:url(../images/ceviche.jpg) no-repeat center;
+	background-size: 100%;
+	margin-bottom: 43px;
+}
+
+
+.mosaic-overlay {
+		display:none;
+		z-index:5;
+		position:absolute;
+		width:100%;
+		height:100%;
+		background:#111;
+		padding-left: 10px;
+	}
+	
+/*		Animation styles / food page*/
+
+		
+.bar .mosaic-overlay{
+	bottom:-135px;
+	height:135px;
+	background:url(../images/bg-black.png);
+}
+	
+		/*** End Animation Styles ***/	
+
+h4 { 
+	font:300 1.7em 'JosefinSlabRegular', Helvetica, Arial, sans-serif; 
+	letter-spacing:0.15em; color:#fff; 
+	text-shadow:1px 1px 0 rgb(0,0,0); 
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/*MEDIA QUERIES --------------------------------------------------------		*/		
+
+@media screen and (min-width: 1025px) and (max-width: 1264px) {
+	
+		.innerwrap {
+			margin-left: 13%;
+		}
+
+}	
+
+@media screen and (min-width: 826px) and (max-width: 1024px) {
+	
+	nav li {
+		font-size: 2.7em;
+	}
+	.food {
+		width:83%;
+		margin-left: 10%;
+	}	
+	.innerwrap {
+		margin-left:5px;
+	}
+	.contact {
+		min-width:53%;
+		margin: 73px 15% 208px 0px;
+	}
+
+}
+
+@media screen and (min-width: 676px) and (max-width: 851px) {
+	
+	nav li {
+		font-size: 2.7em;
+	}
+	header h1 {
+		margin-left:2%;
+	}
+	nav {
+		margin-left: 225px;
+	}
+	.gap {
+		margin:0px;
+	}
+	.food {
+		width:93%;
+		margin-left: 5%;
+	}
+	.innerwrap {
+			margin-left: 25%;
+		}
+	.aboutus {
+		width: 45%;
+	}
+	.contact {
+		width:95%;
+		margin: 73px 3% 208px 0px;
+	}
+	
+}
+@media screen and (min-width: 547px) and (max-width: 675px) {
+	
+	nav li {
+		font-size: 2.6em;
+	}
+	header h1{
+		margin:-20px 0 0 10px;	
+	}
+	header img{
+		height:100px;
+		width:100px;
+	}
+	nav {
+		margin-left: 130px;
+	}
+	.gap {
+		margin:0px;
+	}
+	.food {
+		width:95%;
+		margin-left: 3%;
+	}
+	.aboutus {
+		width: 95%;
+	}
+	.copyright {
+		display:none;
+	}
+	.innerwrap {
+		margin-left: 15%;
+	}
+
+	.contact {
+		min-width:63%;
+		margin: 73px 3% 208px 2%;
+	}
+	.type {
+		font-size: 1.5em;
+		padding:10px;
+	}
+	.callme {
+		font-size: 4em;
+	}
+
+	
+}
+
+@media screen and (min-width: 486px) and (max-width: 546px) {
+	nav li {
+		display:block;
+		text-align: center;
+		font-size: 3em;
+	}
+	header{
+		height: 170px;
+		background: rgba(23,23,23,0.7);
+		margin: 0px 0 33px 0;
+		position: relative;
+	}
+	header img{
+		height:150px;
+		width:150px;
+	}
+	header h1{
+		margin:15px 0 0 20px;	
+	}
+	.gap {
+		margin:0px;
+	}
+	.contact {
+		width:95%;
+		margin: 73px 3% 208px 2%;
+	}
+	.callme {
+		font-size: 3.8em;
+	}
+	.copyright {
+		display:none;
+	}
+	.aboutus {
+		width: 95%;
+	}
+}
+@media screen and (min-width: 320px) and (max-width: 485px) {
+	nav {
+		margin-left: 37%;
+	}
+	nav li {
+		display:block;
+		text-align: center;
+		font-size: 3em;
+	}
+	header{
+		height: 170px;
+		background: rgba(23,23,23,0.7);
+		margin: 0px 0 33px 0;
+		position: relative;
+	}
+	header img{
+	width:75%;
+	height:auto;
+	}
+	header h1{
+		margin:15px 0 0 20px;	
+	}
+	.gap {
+		margin:0px;
+	}
+	.mantra {
+		width:85%;
+		margin: 0 auto 130px;
+	}
+	.services {
+		float:right;
+		width:95%;
+		margin: 53px 3% 130px 0px;
+	}
+	.aboutus {
+		width: 95%;
+	}
+	.contact {	
+		width:95%;
+		margin: 73px 3% 130px 0px;
+	}
+	.contact p {
+		font-size: 1.8em;
+	}
+	.type {
+		font-size: 1.3em;
+		padding:10px;
+	}
+	.callme {
+		font-size: 3em;
+	}
+	.innerwrap {
+		margin: 0 auto;
+	}
+	.food {
+		margin:0 auto;
+		width:95%;
+	}
+	.roundbox p{
+		font-size: 1.6em;
+	}
+	.roundbox .learn{
+		font-size: 2.2em;
+	}
+	.copyright {
+		display:none;
+	}
+	.vanish {
+		display:none;
+	}
+	.call{
+		text-align: center;
+	}
+	/*food page images */
+
+	.mosaic-block {
+		width:95%;
+		min-height:150px;
+		margin:7px;
+	}
+	.mosaic-overlay {
+		width:100%;
+		height:100%;
+	}
+	/*		Animation styles / food page*/
+	.bar p {
+		font-size:1.5em;
+	}
+	.bar h4 {
+		font-size:1.4em;
+	}
+			/*** End Animation Styles ***/
+}
+
+
+
+
+
+
+
